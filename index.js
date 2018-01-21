@@ -1,0 +1,1 @@
+module.exports = require('./ng-echarts/1.0.2/ng-echarts');
