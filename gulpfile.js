@@ -50,7 +50,7 @@ gulp.task('build', function() {
 
     // build js
     // yofc云一期项目需要将定制版的yofc-echarts一起打包
-    gulp.src(['vendor/yofc-echarts/yofc-echarts.js', 'src/directive.js', 'src/util.js', 'src/theme.js', 'src/theme/*.js'])
+    gulp.src(['src/directive.js', 'src/util.js', 'src/theme.js', 'src/theme/*.js'])
         .pipe(plugins.removeUseStrict())
         .pipe(plugins.concat('angular-echarts.js'))
         .pipe(plugins.wrap('(function () {<%= contents %>})();'))
